@@ -1,0 +1,24 @@
+[project]
+name = "base62-codec"
+version = "0.1.0"
+description = "A simple Base62 encoder/decoder for bytes and text."
+requires-python = ">=3.14,<4.0"
+readme = "README.md"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]"
+]
+
+[project.urls]
+"Homepage" = "https://example.com"
+
+[project.scripts]
+base62-codec = "base62_codec.__main__:main"
+
+[tool.uv]
+python = "3.14"
+
+[tool.uv.scripts]
+encode = "python -m base62_codec encode"
+decode = "python -m base62_codec decode"
+serve = "uvicorn app:app --reload"
