@@ -1,6 +1,7 @@
 {
   "name": "Debian Webtop Dev",
   "image": "mcr.microsoft.com/devcontainers/base:debian",
+  "postStartCommand": "bash .devcontainer/start-webtop.sh",
   "forwardPorts": [6080, 8000, 8080],
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {},
