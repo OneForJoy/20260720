@@ -1,12 +1,10 @@
 {
   "name": "ubuntu Webtop Dev",
-
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
   "postStartCommand": "bash .devcontainer/start-webtop.sh",
   "forwardPorts": [6080, 8000, 8080],
   "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {"moby": false},
     "ghcr.io/devcontainers/features/common-utils:2": {
       "installZsh": true,
       "installOhMyZsh": true
