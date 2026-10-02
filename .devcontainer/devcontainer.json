@@ -1,6 +1,8 @@
 {
-  "name": "Debian Webtop Dev",
-  "image": "mcr.microsoft.com/devcontainers/base:debian",
+  "name": "ubuntu Webtop Dev",
+
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+
   "postStartCommand": "bash .devcontainer/start-webtop.sh",
   "forwardPorts": [6080, 8000, 8080],
   "features": {
